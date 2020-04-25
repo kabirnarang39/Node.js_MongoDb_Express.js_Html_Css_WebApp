@@ -1,0 +1,21 @@
+<% include ./partials/header %>
+<style rel="stylesheet" type="text/css">
+    .container{
+        text-align:center;
+    }
+    .row{
+        margin-left:365px;
+        padding-top:20px;
+    }
+</style>
+<div class="container">
+<h1>Sign In Form</h1>
+<div class="row">
+<form action="/login" method="POST">
+<div class="col-lg-6 "><div class="form-group"> 
+<input type="text" name="username" placeholder="Username" class="form-control">
+</div></div></div><div class="row"><div class="col-lg-6 "><div class="form-group" > 
+<input type="password" name="password" placeholder="Password" class="form-control"></div></div></div>
+<div class="row"><div class="col-lg-6"><button class="btn btn-primary btn-block">Submit</button></div></div>
+<div class="row"><div class="col-lg-6"><a href="/forgot">Forgot Password</a></div></div>
+</form>

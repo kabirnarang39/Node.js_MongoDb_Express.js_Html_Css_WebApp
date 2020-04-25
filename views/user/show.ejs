@@ -1,0 +1,59 @@
+<% include ../partials/header %>
+<style rel="stylesheet" type="text/css">
+
+</style>
+<div class="container" >
+<strong><h1 style="text-align:left"><%= user.firstName %>'s Profile</h1></strong>
+<br>
+<div class="row">
+<div class="col-md-12">
+<div style="background-color:white;padding:50px;box-shadow:3px 3px 5px 6px #ccc; border-radius:60px;">
+<ul style="list-style-type:none; " ><li><strong><h1  class="row text-left" > &nbsp;&nbsp;Personal Details</h1></strong></li>
+<li><h3>User Name : <%= user.username %></h3></li>
+<li>
+<h3  class="row text-left" > &nbsp;&nbsp;First Name : <%= user.firstName %></h3> <li><h3  class="row text-left" > &nbsp;&nbsp;Last Name : <%=user.lastName %></h3></li>
+</li>
+<li><h3>DOB : <%= user.date %> </h3></li>
+<li><h3><div class="caption">Email : <a href="mailto:<%= user.email %>"><h4 style="display:inline"><%= user.email %></h4></a></div></h3></li>
+<div style="margin-top:-320px"><img src="<%= user.avatar %>" alt="User Profile Picture"  style="border-radius:50%;width:350px; height:350px ;display:inline; margin-left:670px;box-shadow:3px 3px 5px 6px #ccc" >
+</div>
+<button class="btn btn-primary btn-lg"> Follow</button>
+</div>
+<br>
+<br>
+<br>
+ <h1 style="text-align:left"><%= user.firstName %>'s Campgrounds</h1>
+ <br>
+ <div class="row">
+<div class="col-md-12">
+<div style="background-color:white;padding:50px;box-shadow:3px 3px 5px 6px #ccc;border-radius:60px;">
+
+<div class="row text-center" style="display:flex; flex-wrap:wrap;">
+<% campgrounds.forEach(function(campground){ %>
+ 
+<div class="col-md-3">
+     
+            <div class="thumbnail">
+                <img src="<%= campground.image %>" style="height:150px;width:250px;">
+                <div class="caption">
+                 <h4><%= campground.name %></h4>
+                </div>
+                <p>
+                <a href="/campgrounds/<%= campground.id %>" class="btn btn-primary">More Info</a>
+                </p>
+            </div>
+            </div>
+            <% }); %> 
+        
+        </div>
+</div>
+
+
+
+
+
+</div>
+
+
+
+</div>

@@ -1,0 +1,30 @@
+
+<% include ../partials/header %>
+<style rel="stylesheet" type="text/css">
+    .container{
+        text-align:center;
+    }
+    .row{
+        margin-left:365px;
+        padding-top:20px;
+    }
+</style>
+<div class="container">
+    <h1>Creating New Campground</h1>
+    <div class="row"><form action="/campgrounds" method="POST">
+    <div class="col-lg-6"><div class="form-group"> <input type="text" name="name" placeholder="name" class="form-control"></div></div>
+    </div>
+    <div class="row"><form action="/campgrounds" method="POST">
+    <div class="col-lg-6"><div class="form-group"> <input type="number" name="price" placeholder="price" min="0.01" step="0.01" class="form-control"></div></div>
+    </div>
+    <div class="row">
+    <div class="col-lg-6"> <div class="form-group"><input type="text" placeholder="image" name="image" class="form-control"></div></div>
+</div><div class="row">
+    <div class="col-lg-6"> <div class="form-group"><input type="text" placeholder="description" name="description" class="form-control"></div></div>
+</div>
+<div class="row"><div class="col-lg-6"><button class="btn btn-primary btn-block">Add</button></div></div>   
+</form>
+
+<a href="/campgrounds">Go Back</a>
+</div>
+

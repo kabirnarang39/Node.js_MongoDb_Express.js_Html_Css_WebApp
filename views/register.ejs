@@ -1,0 +1,38 @@
+<% include ./partials/header %>
+<style rel="stylesheet" type="text/css">
+    .container{
+        text-align:center;
+    }
+    .row{
+        margin-left:365px;
+        padding-top:20px;
+    }
+</style>
+<div class="container">
+<h1>Sign Up Form</h1>
+<div class="row">
+<form action="/register" method="POST">
+ <div class="col-lg-6"><div class="form-group">
+<input type="text" name="username" placeholder="Username" class="form-control">
+</div></div></div>
+<div class="row">
+    <div class="col-lg-6"> <div class="form-group">
+<input type="password" name="password" placeholder="Password" class="form-control"></div></div></div>
+<div class="row">
+    <div class="col-lg-6"> <div class="form-group">
+<input type="text" name="firstName" placeholder="First Name" class="form-control"></div></div></div>
+<div class="row">
+    <div class="col-lg-6"> <div class="form-group">
+<input type="text" name="lastName" placeholder="Last Name" class="form-control"></div></div></div>
+<div class="row">
+    <div class="col-lg-6"> <div class="form-group">
+<input type="email" name="email" placeholder="abc@xyz.com" class="form-control"></div></div></div>
+ <div class="row">
+    <div class="col-lg-6"> <div class="form-group">
+<input type="text" name="avatar" placeholder="Avatar" class="form-control"></div></div></div>
+<div class="row">
+    <div class="col-lg-6"> <div class="form-group">
+<input type="date" name="date" placeholder="DOB" class="form-control"></div></div></div>
+ <div class="row"><div class="col-lg-6">
+<button class="btn btn-lg btn-block btn-primary">Sign Up</button></div></div>
+</form>
