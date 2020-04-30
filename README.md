@@ -3,6 +3,7 @@
 //Extract it on your system
 //Download node.js https://nodejs.org/en/download/
 //Download mongoDb https://www.mongodb.com/download-center
+//Open mongod terminal from C:\Program Files\MongoDB\Server\3.6\bin
 //Open terminal in app.js file of the Application
 //Run npm install --save command
 //To run server run node app
