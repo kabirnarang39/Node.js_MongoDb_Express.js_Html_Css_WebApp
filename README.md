@@ -1,3 +1,12 @@
+//Guidelines foe running the application
+//Download the repository 
+//Extract it on your system
+//Download node.js https://nodejs.org/en/download/
+//Download mongoDb https://www.mongodb.com/download-center
+//Open terminal in app.js file of the Application
+//Run npm install --save command
+//To run server run node app
+//Now open Any browser and go to localhost:3000
 The main idea behind creating the project entitled Plan A Trip was to present an idea that how a little knowledge to frontend development
 along with a good  knowledge of some major backend technologies like Node , Express and a database like Mongodb can result in an exciting
 web site with  some advanced features. 
